@@ -1,0 +1,93 @@
+/* login.css */
+
+body {
+  background: url('images/back-drop.jpg') center/cover no-repeat rgba(222, 255, 222, 0.3);
+  background-color: #87b87f;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#login {
+  text-align: center;
+}
+
+h2 {
+  color: #2c5234;
+}
+
+.login-container {
+  background-color: rgba(48, 84, 53, 0.7);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin: auto;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #87b87f;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #a2e8af;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #87d082;
+}
+
+a {
+  text-decoration: none;
+  color: #305435;
+  margin-top: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .login-container {
+    width: 80%; /* Adjust the width for smaller screens */
+  }
+  
+  input, button {
+    width: 100%; /* Make input fields and buttons full-width on smaller screens */
+  }
+}
